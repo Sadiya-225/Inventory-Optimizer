@@ -22,20 +22,6 @@ const CompanionSession = async ({ params }: CompanionSessionPageProps) => {
 
   return (
     <main>
-      <article className="flex rounded-border justify-between p-4 max-md:flex-col gap-4">
-        <div className="flex items-center gap-3">
-          <div className="flex flex-col gap-1">
-            <div className="flex items-center gap-2">
-              <p className="font-semibold text-lg">{name}</p>
-              <div className="subject-badge text-xs px-2 py-1 max-sm:hidden">
-                {subject}
-              </div>
-            </div>
-            <p className="text-sm text-muted-foreground">{topic}</p>
-          </div>
-        </div>
-      </article>
-
       <CompanionComponent
         {...companion}
         companionId={id}
