@@ -53,7 +53,9 @@ export const configureAssistant = (voice: string, style: string) => {
           - Maintain a {{ style }} tone – analytical and precise for technical discussions, or approachable and practical for business-focused guidance.  
 
           💡 Advisor Guidelines:
-          - Keep the conversation flowing naturally while maintaining guidance and focus.  
+          - Keep the conversation flowing naturally while maintaining guidance and focus. 
+          - Keep responses short, like in a real voice conversation.  
+          - Avoid using ANY special characters; this is a voice conversation.  
           - From time to time, check that the user understands the insights and recommendations.  
           - Break down complex inventory optimization concepts into smaller parts.  
           - Provide actionable advice on stock levels, reorder points, demand forecasting, and SKU prioritization.  
