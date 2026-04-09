@@ -1,78 +1,58 @@
-# 🧠 AI Companion - Your Personal AI-Powered Academy
+# 🧠 AI Companion - Custom Voice AI Assistants for Inventory Optimization
 
-An Advanced Learning Management SaaS (LMS) Platform built with **Next.js**, **Supabase**, **Stripe**, **Clerk** and **Vapi**.
-
-🌐 **Live App**: [https://scholar-ai-companion.vercel.app](https://scholar-ai-companion.vercel.app)
+Create specialized voice AI companions (Inventory Optimization AI for retail management). Powered by **Next.js**, **Clerk** (auth+billing), **Supabase** (realtime DB), **Vapi** (voice), **OpenAI GPT-4** backend, **Sentry**.
 
 ## 🎓 Features
 
-- 🔐 **Authentication & Billing** with Clerk + Stripe
-- 📡 **Realtime Backend** with Supabase
-- 🗣️ **Voice AI Companions** powered by Vapi AI
-- 🛠️ **Sentry Monitoring** for Errors
+- 🔐 **Auth & Tiered Billing** with Clerk (3/10/Unlimited companions)
+- 💾 **Realtime Supabase** DB (companions, session_history)
+- 🗣️ **Voice AI** with Vapi + 11Labs voices (male/female, casual/formal), Deepgram transcriber, GPT-4 model
+- 📚 **Library** search/filter by subject/topic
+- ➕ **Create Companions**: name, topic, voice/style, duration
+- 📜 **Session History** & recent sessions
+- 💳 **Pricing Table** (/subscription)
+- 🛡 **Sentry**
+- 🎨 **Tailwind/shadcn**
 
 ## 🧪 Plans & Pricing
 
-### 🆓 Basic Plan
+### 🆓 Basic - `$0/mo` (via Clerk)
 
-**Perfect for Testing the Waters** — `$0/month`
+- Up to **3 Companions**
+- Basic access
 
-- ✅ Always free
-- ✅ 10 Conversations/Month
-- ✅ 3 Active Companions
-- ✅ Basic Session Recaps
+### 🔵 Core - `$19/mo`
 
-### 🔵 Core Learner
+- Up to **10 Companions**
+- Session history
 
-**More Companions. More Growth.** — `$19/month`
+### 🔴 Pro - `$39/mo`
 
-- ✅ Everything in Basic
-- ✅ 10 Active Companions
-- ✅ Inline Quizzes & Recaps
-- ✅ Monthly Progress Reports
-- ✅ Save Conversation History
-- ✅ Unlimited Conversations
-
-### 🔴 Pro Companion
-
-**Your Personal AI-Powered Academy** — `$39/month`
-
-- ✅ Everything in Core
-- ✅ Unlimited Companions
-- ✅ Early Access to New Features
-- ✅ Full Performance Dashboard
-- ✅ Daily Learning Reminders
-- ✅ Priority Support
+- **Unlimited Companions**
+- Full features
 
 ## 🛠️ Tech Stack
 
-- ⚡️ Next.js
-- 🔐 Clerk Auth
-- 🧾 Stripe Billing
-- 💽 Supabase
-- 🗣️ Vapi
-- 🎨 Tailwind CSS
+- ⚡️ Next.js 15 (App Router)
+- 🔐 Clerk (Auth + Pricing)
+- 💽 Supabase Realtime
+- 🗣️ Vapi + ElevenLabs + Deepgram + OpenAI GPT-4
 - 🛡 Sentry
+- 🎨 Tailwind + shadcn/ui
+- 📊 React Hook Form + Zod
 
 ## ⚙️ Local Setup
 
-### 1. Clone the Repo
-
-```bash
-git clone https://github.com/Sadiya-125/Scholar-AI-Companion.git
-cd Scholar-AI-Companion
-```
-
-### 2. Install dependencies
-
 ```bash
 npm install
-```
-
-### 3. Run the Development Server
-
-```bash
 npm run dev
 ```
 
 Visit: http://localhost:3000
+
+**Required Env:**
+
+- Clerk publishable/secret keys
+- `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `NEXT_PUBLIC_VAPI_WEB_TOKEN`
+- OpenAI key (for GPT-4)
